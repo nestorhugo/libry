@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+:root{
+    --primary-color: #2E4BB7;
+    --secondary-color: #DEC69F;
+    --acent: #95D177;
+    --cinza-placeholder: #A7A7A7;
+}
