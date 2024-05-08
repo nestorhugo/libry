@@ -1,0 +1,82 @@
+<button
+  data-drawer-target="logo-sidebar"
+  data-drawer-toggle="logo-sidebar"
+  aria-controls="logo-sidebar"
+  type="button"
+  class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+>
+  <span class="sr-only">Open sidebar</span>
+  <i class="ph-bold ph-list"></i>
+</button>
+
+<aside
+  id="logo-sidebar"
+  class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
+  aria-label="Sidebar"
+>
+  <div
+    class="h-full px-3 py-4 overflow-y-auto bg-gray-50 flex flex-col justify-between"
+  >
+    <div>
+      <a href="/" class="flex items-center ps-2.5 mb-5 mt-3">
+        <img
+          src="../../../assets/logo.svg"
+          class="h-6 me-3 sm:h-7"
+          alt="Logo Libry"
+        />
+      </a>
+      <ul class="space-y-2 font-medium">
+        <li>
+          <a
+            href="/"
+            class="flex items-center p-2 text-blue-900 rounded-lg hover:bg-amber-100 group"
+          >
+            <i class="ph-bold ph-house"></i>
+            <span class="ms-3">Página Inicial</span>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="/"
+            class="flex items-center p-2 text-blue-900 rounded-lg hover:bg-amber-100 group"
+          >
+            <i class="ph-bold ph-book-open"></i>
+            <span class="ms-3">Livros disponíveis</span>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="/"
+            class="flex items-center p-2 text-blue-900 rounded-lg hover:bg-amber-100 group"
+          >
+            <i class="ph-bold ph-book"></i>
+            <span class="ms-3">Meus livros</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul class="space-y-2 font-medium">
+        <li class="mb-5 ml-3">
+          <p class="text-blue-900 text-lg truncate w-48">
+            Usuário Grande Da Silva Neto
+          </p>
+          <p class="text-blue-900 text-sm truncate w-48">
+            usernamebemgrande12345&#64;gmail.com
+          </p>
+        </li>
+        <li>
+          <a
+            href="/login"
+            class="flex items-center p-2 text-red-500 rounded-lg hover:bg-red-50 group"
+          >
+            <i class="ph-bold ph-sign-out"></i>
+            <span class="ms-3">Sair</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</aside>
