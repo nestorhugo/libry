@@ -3,7 +3,7 @@
   <!-- Left: Image -->
   <div class="w-1/2 h-screen hidden lg:block">
     <img
-      src="../../../assets/libry-login-ilustracao.svg"
+      src="../../../assets/libry-register-ilustracao.svg"
       alt="Ilustração de uma pessoa lendo um livro."
       class="flex items-center justify-center h-screen w-full"
     />
@@ -13,24 +13,36 @@
     <div class="flex flex-col items-center justify-center">
       <img src="../../../assets/logo.svg" class="mb-5" />
       <h1 class="text-2xl font-semibold mb-4 text-center text-blue-900">
-        Bem-vindo à Libry!
+        Pronto para embarcar no <br />universo da leitura?
       </h1>
       <p class="mb-4 text-center text-blue-900">
-        Aqui, cada página é uma nova jornada.
-      </p>
-      <p class="mb-4 text-center text-blue-900">
-        Entre e descubra seu próximo grande livro!
+        Registre-se agora e abra as portas para um <br />mundo de histórias
+        inesquecíveis.
       </p>
     </div>
 
     <form action="#" method="POST">
+      <!-- nome Input -->
+      <div class="mb-4">
+        <label for="nome" class="block text-gray-600"
+          ><i class="ph ph-user"></i> Nome</label
+        >
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-900"
+          autocomplete="off"
+        />
+      </div>
+
       <!-- Email Input -->
       <div class="mb-4">
         <label for="email" class="block text-gray-600"
           ><i class="ph ph-envelope-simple"></i> Email</label
         >
         <input
-          type="text"
+          type="email"
           id="email"
           name="email"
           class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-900"
@@ -50,20 +62,32 @@
           autocomplete="off"
         />
       </div>
-      <!-- Login Button -->
+
+      <!-- Repetir senha Input -->
+      <div class="mb-4">
+        <label for="repetirSenha" class="block text-gray-600">
+          <i class="ph ph-lock"></i> Repetir senha</label
+        >
+        <input
+          type="password"
+          id="repetirSenha"
+          name="repetirSenha"
+          class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-900"
+          autocomplete="off"
+        />
+      </div>
+      <!-- Register Button -->
       <button
         type="submit"
         class="bg-blue-900 hover:bg-blue-800 text-white font-semibold rounded-md py-2 px-4 w-full"
       >
-        Login
+        Cadastrar
       </button>
     </form>
     <!-- Sign up  Link -->
     <div class="mt-6 text-blue-900 text-center">
-      <p>Ainda não tem conta?</p>
-      <a href="/register" class="hover:underline text-2xl font-bold"
-        >Cadastre-se</a
-      >
+      <p>Já possui uma conta?</p>
+      <a href="/login" class="hover:underline text-2xl font-bold">Faça login</a>
     </div>
   </div>
 </div>
